@@ -1,0 +1,484 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday My Love ❤️</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fff0f5;
+    color: #742449;
+    overflow-x: hidden;
+}
+
+.navbar {
+    background: rgba(83, 15, 48, .96);
+}
+
+.navbar-brand {
+    font-family: 'Dancing Script', cursive;
+    font-size: 27px;
+    font-weight: bold;
+}
+
+.nav-link {
+    color: white !important;
+    cursor: pointer;
+}
+
+.page {
+    display: none;
+    min-height: 100vh;
+    padding: 100px 15px 55px;
+    align-items: center;
+    justify-content: center;
+}
+
+.active-page {
+    display: flex;
+    animation: fadeIn .7s ease;
+}
+
+.hero {
+    color: white;
+    text-align: center;
+    background: linear-gradient(135deg, #65143f, #df4386, #8b174f);
+}
+
+.heart {
+    font-size: 75px;
+    animation: beat 1.2s infinite;
+}
+
+h1 {
+    font-size: clamp(38px, 8vw, 75px);
+    font-weight: bold;
+}
+
+.script {
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+}
+
+.hero h2 {
+    font-size: clamp(30px, 5vw, 48px);
+    color: #ffe1ed;
+}
+
+.hero-text {
+    max-width: 600px;
+    margin: 25px auto;
+    line-height: 1.9;
+}
+
+.love-btn, .outline-btn {
+    border-radius: 40px;
+    padding: 12px 24px;
+    margin: 7px;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.love-btn {
+    background: #ffc5dc;
+    color: #781c49;
+    border: 2px solid #ffc5dc;
+}
+
+.love-btn:hover {
+    background: white;
+    transform: translateY(-3px);
+}
+
+.outline-btn {
+    color: white;
+    border: 2px solid white;
+}
+
+.outline-btn:hover {
+    background: white;
+    color: #781c49;
+}
+
+.floating-hearts {
+    margin-top: 30px;
+    font-size: 28px;
+    animation: float 2s infinite;
+}
+
+.section-page {
+    background: linear-gradient(135deg, #fff0f5, #ffd6e7);
+}
+
+.love-card {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: clamp(25px, 5vw, 55px);
+    border-radius: 25px;
+    box-shadow: 0 10px 35px #9d35602b;
+    line-height: 2;
+    text-align: center;
+}
+
+.big-heart {
+    font-size: 65px;
+    animation: beat 1.2s infinite;
+}
+
+.section-title {
+    color: #a52b62;
+    font-size: clamp(34px, 6vw, 48px);
+}
+
+.gujarati {
+    color: #a52b62;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.photo-card {
+    background: white;
+    padding: 12px;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px #9d35602b;
+    height: 100%;
+    transition: .3s;
+}
+
+.photo-card:hover {
+    transform: translateY(-5px);
+}
+
+.photo-card img {
+    width: 100%;
+    height: 340px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.photo-card h5 {
+    text-align: center;
+    padding: 15px 4px 5px;
+    color: #a52b62;
+    font-family: 'Dancing Script', cursive;
+    font-size: 25px;
+}
+
+.surprise-section {
+    background: linear-gradient(135deg, #681642, #d83e82);
+    color: white;
+    text-align: center;
+}
+
+.gift {
+    font-size: 100px;
+    animation: float 2s infinite;
+}
+
+.surprise-message {
+    display: none;
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 25px;
+    background: #fff0f5;
+    color: #78214c;
+    line-height: 2;
+    animation: fadeIn .8s;
+}
+
+footer {
+    padding: 18px 10px;
+    background: #51132f;
+    color: white;
+    text-align: center;
+}
+
+@keyframes beat {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.15); }
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-12px); }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(12px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@media(max-width:576px) {
+    .hero-text { font-size: 15px; }
+    .photo-card img { height: 300px; }
+    .floating-hearts { font-size: 21px; }
+    .surprise-message { padding: 22px 16px; }
+}
+
+@media(prefers-reduced-motion:reduce) {
+    *, *::before, *::after {
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#" onclick="showPage('home')">❤️ My Love</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#menu" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto text-center">
+                <li class="nav-item"><a class="nav-link" onclick="showPage('home')">Home</a></li>
+                <li class="nav-item"><a class="nav-link" onclick="showPage('message')">Love Message</a></li>
+                <li class="nav-item"><a class="nav-link" onclick="showPage('gallery')">Our Photos</a></li>
+                <li class="nav-item"><a class="nav-link" onclick="showPage('surprise')">Surprise 🎁</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- PAGE 1: HOME -->
+<section id="home" class="page active-page hero">
+    <div class="container">
+        <div class="heart">💖</div>
+        <p>Today is all about you, my love!</p>
+
+        <h1>Happy Birthday</h1>
+        <h2 class="script">My Beautiful Life Partner ❤️</h2>
+
+        <p class="hero-text">
+            તમારો જન્મદિવસ મારા માટે ખૂબ જ ખાસ છે,
+            કારણ કે તમે મારા જીવનની સૌથી સુંદર ભેટ છે. 💕
+        </p>
+
+        <button class="btn love-btn" onclick="showPage('message'); celebrate()">
+            Read My Heart 💌
+        </button>
+
+        <button class="btn outline-btn" onclick="celebrate()">
+            Celebrate 🎉
+        </button>
+
+        <div class="floating-hearts">💕 💗 💖 💞 💘</div>
+    </div>
+</section>
+
+<!-- PAGE 2: LOVE MESSAGE -->
+<section id="message" class="page section-page">
+    <div class="container">
+        <div class="love-card">
+            <div class="big-heart">❤️</div>
+
+            <h2 class="script section-title">A Message From My Heart</h2>
+
+            <p class="gujarati">મારા વહાલા જીવનસાથી ❤️</p>
+
+            <p>
+             
+
+                🎂❤️ જન્મદિવસની ખૂબ ખૂબ શુભેચ્છાઓ મારા જીવનના ખાસ વ્યક્તિને! 🫶🏻💋<br>
+
+                સાંભળો ને મારા પતિદેવ ❤️, તમે મારા માટે બહુ જ ખાસ છો, એટલા ખાસ કે તમને શબ્દોમાં સમજાવવું પણ મારા માટે મુશ્કેલ છે. 🫂💗 તમે મારા જીવનના એ વ્યક્તિ છો જેને હું કોઈ પણ સંજોગોમાં, કોઈ પણ પરિસ્થિતિમાં ક્યારેય ખોવા માંગતી નથી. 🥺❤️ તમે મારી ખુશી છો, મારી શાંતિ છો, મારી સ્માઈલનું કારણ છો અને ક્યારેક મારા ગુસ્સાનું કારણ પણ છો. 😂❤️<br>
+
+                મને ખબર છે કે ક્યારેક હું તમને બહુ ટેન્શન આપું છું, નાની નાની વાતમાં ગુસ્સે થઈ જાઉં છું, તમારી સાથે ઝઘડો કરું છું અને ક્યારેક તમને હેરાન પણ કરું છું. 🥹🫣 એ બધી વાતો માટે I AM REALLY SORRY, KANA 🥺❤️ મારો ઇરાદો ક્યારેય તમને દુઃખી કરવાનો નથી હોતો. બસ, તમે મારા માટે એટલા ખાસ છો કે ક્યારેક તમારી પાસે વધારે અપેક્ષાઓ રાખી બેસું છું. 🫶🏻<br>
+
+                અને હા, એક વાત યાદ રાખજો, હું તમારી સાથે ઝઘડો કરું એટલે તમને પ્રેમ નથી કરતી એવું નથી હોં! 😂❤️ ઊલટું, તમે જ એક એવા માણસ છો જેની સાથે હું આખો દિવસ ઝઘડી પણ શકું અને પછી એની સાથે જ વાત કર્યા વગર રહી પણ ના શકું. 🤣😘 તમારી સાથે લડવું પણ ગમે છે અને તમને મનાવવું પણ ગમે છે, પણ તમે મને મનાવો એ તો સૌથી વધારે ગમે છે. 😌😂💗<br>
+
+                બકા, તમે મારા જીવનનું એવું પાત્ર છે જેને હું મારી વાર્તામાંથી ક્યારેય દૂર કરવા નથી માંગતી. 🥺❤️ ગમે એટલી મુશ્કેલીઓ આવે, ગમે એટલા ઝઘડા થાય, પણ અંતે મારે તમારી સાથે જ રહેવું છે. તમારા ખરાબ સમયમાં તમારો સાથ આપવો છે, તમારી ખુશીમાં તમારી સાથે હસવું છે અને તમારા દરેક સપનામાં તમારી સાથે ઊભું રહેવું છે. 🫂💞<br>
+
+                મને ખબર નથી કે ભવિષ્યમાં શું લખ્યું છે, પણ મારી દરેક આવતીકાલમાં તમે હોય એવી મારી દિલથી ઈચ્છા છે. 🥹❤️ તમારો હાથ પકડીને જીવનની દરેક સફર પૂરી કરવી છે. તમારા ચહેરા પરની સ્માઈલનું કારણ બનવું છે અને જ્યારે તમે દુઃખી હોય ત્યારે તમારી બધી તકલીફો ભૂલાવીને તમને પ્રેમથી ગળે લગાવવું છે. 🫶🏻💋<br>
+  
+                અને સાંભળો, તમે હવે મને સહન કરવાની આદત પાડી દયો, કારણ કે હું ક્યાંય જવાની નથી! 🤣😂❤️ તમારે આખી જિંદગી મારી નખરાંવાળી વાતો, મારા ગુસ્સા, મારા ડ્રામા અને મારા બેહિસાબ પ્રેમને સહન કરવાનો છે. 😜💋❤️🧿<br>
+
+                હેપ્પી બર્થડે મારા રાજા જી, મારા સેદારા, મારા વાંદરા, મારા ફેવરિટ માણસ! 🎂🎉❤️ ભગવાન તમને દુનિયાની બધી ખુશીઓ આપે, તમારા બધા સપના પૂરાં કરે અને તમારા ચહેરા પરની સ્માઈલ ક્યારેય ઓછી ના થાય. 🥹🫶🏻
+<br>
+
+                I LOVE YOU SOOOO MUCH, Prabhu Ji! ❤️😘🫂<br>
+
+                તમે મારા માટે આજે પણ ખાસ છો, કાલે પણ ખાસ રહેશો અને મારી જિંદગીના છેલ્લા દિવસ સુધી ખાસ જ રહેશો. 😘🫂❤️<br>
+
+                
+                🎂❤️ HAPPY BIRTHDAY, MY LIFE PARTNER! MY FOREVER PERSON!❤️🎂😘
+            </p>
+<br>
+            
+
+            <h2 class="script">Forever Yours 💋</h2>
+
+            <button class="btn love-btn mt-3" onclick="showPage('gallery')">
+                Our Memories 📸
+            </button>
+        </div>
+    </div>
+</section>
+
+<!-- PAGE 3: PHOTO GALLERY -->
+<section id="gallery" class="page section-page">
+    <div class="container">
+        <h2 class="section-title script text-center mb-3">
+            Our Beautiful Memories 📸
+        </h2>
+
+        <p class="text-center mb-4">
+            Every moment with you is my favourite memory. ❤️
+        </p>
+
+        <div class="row g-4">
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="photo-card">
+                    <img src="clg.jpeg" alt="Our first memory"
+                         onerror="this.src='https://placehold.co/600x750/ffd6e7/9b2459?text=Add+Photo+1'">
+                    <h5>My Favourite Person 💗</h5>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="photo-card">
+                    <img src="navratri.jpeg" alt="Our happy memory"
+                         onerror="this.src='https://placehold.co/600x750/f8d9e8/9b2459?text=Add+Photo+2'">
+                    <h5>My Happiness 🥰</h5>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="photo-card">
+                    <img src="80s.png" alt="Our special memory"
+                         onerror="this.src='https://placehold.co/600x750/ffe4ec/9b2459?text=Add+Photo+3'">
+                    <h5>Forever Together 💑</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mt-5">
+            <button class="btn love-btn" onclick="showPage('surprise'); celebrate()">
+                Open Your Surprise 🎁
+            </button>
+        </div>
+    </div>
+</section>
+
+<!-- PAGE 4: SURPRISE -->
+<section id="surprise" class="page surprise-section">
+    <div class="container">
+        <div class="gift">🎁</div>
+
+        <h1 class="script">A Little Surprise For You</h1>
+
+        <p class="mt-3">I have a little message hidden inside this gift. 💝</p>
+
+        <button class="btn love-btn mt-3" onclick="openSurprise()">
+            Tap Here, My Love ❤️
+        </button>
+
+        <div id="surpriseMessage" class="surprise-message">
+            <h2 class="script">I Love You So Much! ❤️</h2>
+
+            <p>
+                મારી જિંદગીમાં આવવા માટે આભાર.
+                તમારી સાથે દરેક દિવસ ખાસ છે.
+                
+            </p>
+
+            <h3>Happy Birthday, My Forever Love! 🎂💋</h3>
+
+            <p>આપણે હંમેશાં સાથે રહીએ. ❤️</p>
+        </div>
+
+        <!-- <button class="btn outline-btn mt-4" onclick="showPage('home')">
+            Back to Home 🏠
+        </button> -->
+    </div>
+</section>
+
+<footer>
+    Made with endless love ❤️ Just for you
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+
+<script>
+function showPage(pageId) {
+    document.querySelectorAll('.page').forEach(page => {
+        page.classList.remove('active-page');
+    });
+
+    document.getElementById(pageId).classList.add('active-page');
+
+    const menu = document.getElementById('menu');
+
+    if (menu.classList.contains('show')) {
+        bootstrap.Collapse.getOrCreateInstance(menu).hide();
+    }
+
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function celebrate() {
+    if (typeof confetti !== 'function') return;
+
+    confetti({
+        particleCount: 150,
+        spread: 100,
+        origin: { y: 0.6 },
+        colors: ['#ff4d94', '#ffd700', '#ffffff', '#ff8fab']
+    });
+
+    setTimeout(() => {
+        confetti({
+            particleCount: 80,
+            angle: 60,
+            spread: 65,
+            origin: { x: 0, y: 0.7 }
+        });
+
+        confetti({
+            particleCount: 80,
+            angle: 120,
+            spread: 65,
+            origin: { x: 1, y: 0.7 }
+        });
+    }, 300);
+}
+
+function openSurprise() {
+    document.getElementById('surpriseMessage').style.display = 'block';
+    celebrate();
+
+    document.getElementById('surpriseMessage').scrollIntoView({
+        behavior: 'smooth',
+        block: 'center'
+    });
+}
+
+window.addEventListener('load', () => {
+    setTimeout(celebrate, 800);
+});
+</script>
+
+</body>
+</html>
